@@ -1,0 +1,24 @@
+ nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-family: Bungee, sans-serif;
+  padding: 0 1.5em;
+} 
+
+ nav span  {  
+  flex-direction: row-reverse;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+
