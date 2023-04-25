@@ -9,6 +9,7 @@
   color: #FFFFFF;
   font-family: Bungee, sans-serif;
   padding: 0 1.5em;
+  position: fixed;
 } 
 
  nav span  {  
@@ -18,6 +19,14 @@
   justify-content: center;
   
 }
+header{
+  display: flex;
+  flex-direction: column;
+  flex-flow: center wrap;
+  
+  align-items: center;
+}
+
 
 
 

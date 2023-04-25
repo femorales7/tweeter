@@ -1,0 +1,10 @@
+header{
+  display: flex;
+  flex-flow: column wrap;  
+  justify-content: flex-end;
+  height: 520px;
+  width: 100%;
+  background-color: #cc9c00;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
