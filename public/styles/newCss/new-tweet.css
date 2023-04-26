@@ -1,0 +1,49 @@
+main {
+  display:flex;
+  height: 720px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color:  #ffffff;
+  font-style: normal;
+  padding: 0 1.5em;
+  position: fixed;
+  color: #070707;
+  font-family: sans-serif;
+  
+
+}
+
+
+
+.new-tweet{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+main section form{
+  display: flex;
+  flex-flow: column wrap;
+}
+main section form textarea{
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  align-items: end;
+}
+
+.botton{
+  display: flex;  
+  font-family: Bungee, sans-serif;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.botton botton{
+  background-color: #4056A1;
+  font-family: Bungee, sans-serif;
+}
+.counter-invalid {
+  color: red;
+}

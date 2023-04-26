@@ -21,7 +21,13 @@ body {
   font-size: 24px;
   font-family: 'Bungee', cursive;
 }
+main{
+  width: 90%;
+  align-content: center;
+  color: #dad8d3;
+  background-color: #f7f6f4;
 
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

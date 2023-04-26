@@ -19,12 +19,15 @@
   justify-content: center;
   
 }
-header{
+/* header.profile{
   display: flex;
   flex-direction: column;
   flex-flow: center wrap;
-  
+  font-family: sans-serif;
   align-items: center;
+} */
+.write{
+  font-family: sans-serif;
 }
 
 
