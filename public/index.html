@@ -5,26 +5,45 @@
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/newCss/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/newCss/header.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/newCss/new-tweet.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="/styles/newCss/new-tweet.css"
+      type="text/css"
+    />
     <link rel="stylesheet" href="/styles/newCss/tweets.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-    
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
   </head>
 
   <body>
@@ -33,59 +52,46 @@
       <span>tweeter</span>
       <div>
         <span class="write"> Write a new tweet</span>
-        <span class="icon"><i class="fa-sharp fa-solid fa-angles-down" style="color: #da0711;"></i></span>      
+        <span class="icon"
+          ><i
+            class="fa-sharp fa-solid fa-angles-down"
+            style="color: #da0711"
+          ></i
+        ></span>
       </div>
     </nav>
     <header class="profile">
       <div>
-          <img src="/images/profile-hex.png"> 
+        <img src="/images/profile-hex.png" />
       </div>
-      <br>
+      <br />
       <div>
-          <h2>Your Name</h2>
+        <h2>Your Name</h2>
       </div>
-  </header>
+    </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-    
       <section class="new-tweet">
         <div class="compose">
           <h2>Compose Tweet</h2>
         </div>
-        <form action="/tweets/" method="POST">
+        <form id="new-tweet-form" action="/tweets/" method="POST">
           <label for="tweet-text"></label>
-          <textarea name="text" id="tweet-text" placeholder = "What are you humming about?"></textarea>
+          <textarea
+            name="text"
+            id="tweet-text"
+            placeholder="What are you humming about?"
+          ></textarea>
           <div class="botton">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
-        <article class="tweet">
-          <header>
-            <div class="avatarName">
-              <div class="avatarNameTop">
-               <img class="avatar" src="/images/avatar1.png" alt="Avatar">            
-               <h3 class="user-name">User Name</h3>
-              </div>
-              <span class="user-handle">@user</span>
-            </div>
-            <div>          
-              <p class="tweet-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat, elit vitae interdum facilisis, nisi erat tempor ipsum, sit amet tempor lectus erat at elit.</p>
-            </div>
-          </header>
+        <section id="tweets-container">
           
-          <footer>
-            <span class="tweet-date">2 days ago</span>
-            <div class="tweet-icons">
-              <i class="fa-solid fa-flag"></i>
-              <i class="fa-solid fa-retweet"></i>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-          </footer>
-        </article>
+        </section>
       </section>
-
     </main>
   </body>
 </html>
