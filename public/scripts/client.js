@@ -73,13 +73,15 @@ $(document).ready(function () {
     const textTweet = $textArea.val().trim();
     if(!textTweet){
       const $errorEmpty = $("<h2>").text("Tweet is empty");
-      errorMessage.empty().append($errorEmpty);
+      const $icon = $("<i>").addClass("fa-sharp fa-solid fa-circle-exclamation");
+      errorMessage.empty().append($errorEmpty, $icon);
       errorMessage.show(); // Show the error message
       return;
     }
     if (textTweet.length > 140){
       const $errorLonger = $("<h2>").text("The tweet is longer than 140 characters.");
-      errorMessage.empty().append($errorLonger);
+      const $icon = $("<i>").addClass("fa-sharp fa-solid fa-circle-exclamation");
+      errorMessage.empty().append($errorLonger, $icon);
       errorMessage.show(); // Show the error message     
       return;
     }
