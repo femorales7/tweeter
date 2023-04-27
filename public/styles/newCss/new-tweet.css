@@ -13,9 +13,6 @@ main {
   
 
 }
-
-
-
 .new-tweet{
   display: flex;
   flex-direction: column;
@@ -40,10 +37,18 @@ main section form textarea{
   align-content: center;
 }
 
-.botton botton{
+.botton button{
   background-color: #4056A1;
+  color: #faf9f9;
   font-family: Bungee, sans-serif;
 }
 .counter-invalid {
   color: red;
+}
+
+main #error-message{
+  display: flex;
+  justify-content: center;
+  color: red
+
 }
