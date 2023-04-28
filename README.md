@@ -7,7 +7,7 @@ this repository contains the files for the operation of the tweet project, in th
 !["Big Page"](https://github.com/femorales7/tweeter/blob/master/docs/tweet%20firstimage.PNG)
 
 
-![Small Pages"](https://github.com/femorales7/tinyapp/blob/master/docs/urls.PNG)
+![Small Pages"](https://github.com/femorales7/tweeter/blob/master/docs/tweet%20secondimage.PNG)
 
 
 ## Dependencies
