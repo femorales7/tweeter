@@ -4,13 +4,10 @@ this repository contains the files for the operation of the tweet project, in th
 
 ## Final Product
 
-!["Login page"](https://github.com/femorales7/tinyapp/blob/master/docs/login.PNG)
+!["Big Page"](https://github.com/femorales7/tweeter/blob/master/docs/tweet%20firstimage.PNG)
 
 
-!["URls page"](https://github.com/femorales7/tinyapp/blob/master/docs/urls.PNG)
-
-
-!["Edit page"](https://github.com/femorales7/tinyapp/blob/master/docs/edit.PNG)
+![Small Pages"](https://github.com/femorales7/tinyapp/blob/master/docs/urls.PNG)
 
 
 ## Dependencies
