@@ -1,17 +1,9 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
 
-// const tweets = require("../../server/routes/tweets");
-
-// Fake data taken from initial-tweets.json
 $(document).ready(function () {
   const $tweetsSeccion = $("#tweets-container");
 
   const createTweetElement = function (tweet) {
-    /* Your code for creating the tweet element */
+    /* code for creating the tweet element */
     const $tweet = $("<article>").addClass("tweet");
     const $header = $("<header>");
     const $avatarName = $("<div>").addClass("avatarName");
@@ -71,17 +63,18 @@ $(document).ready(function () {
     event.preventDefault();
     const $textArea = $form.find("textarea");
     const textTweet = $textArea.val().trim();
+    //validation of tweet empty
     if(!textTweet){
       const $errorEmpty = $("<h2>").text("Tweet is empty");
-      const $icon = $("<i>").addClass("fa-sharp fa-solid fa-circle-exclamation");
-      errorMessage.empty().append($errorEmpty, $icon);
+      errorMessage.empty().append($errorEmpty);
       errorMessage.show(); // Show the error message
       return;
     }
+
+    //validation tweet longer than 140 characters
     if (textTweet.length > 140){
       const $errorLonger = $("<h2>").text("The tweet is longer than 140 characters.");
-      const $icon = $("<i>").addClass("fa-sharp fa-solid fa-circle-exclamation");
-      errorMessage.empty().append($errorLonger, $icon);
+      errorMessage.empty().append($errorLonger);
       errorMessage.show(); // Show the error message     
       return;
     }

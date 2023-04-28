@@ -3,6 +3,10 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
 
     <!-- External CSS -->
     <link
@@ -37,7 +41,12 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.full.min.js" integrity="sha512-wb3lqal2VtYhmlPAr232VP+Zus676CFAEYdywxIUSxG6F/X9WhN6SpREkWUdwBvMpd6gCKuKTGHhdum6m1wOvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.full.min.js"
+      integrity="sha512-wb3lqal2VtYhmlPAr232VP+Zus676CFAEYdywxIUSxG6F/X9WhN6SpREkWUdwBvMpd6gCKuKTGHhdum6m1wOvQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -49,10 +58,12 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
+    <nav class="navigationBar">
       <span>tweeter</span>
       <div>
-        <span class="write"> Write a new tweet</span>
+        <span class="write">
+          <b style="margin-right: 5px">Write</b> a new tweet
+        </span>
         <span class="icon"
           ><i
             class="fa-sharp fa-solid fa-angles-down"
@@ -67,7 +78,7 @@
       </div>
       <br />
       <div>
-        <h2>Your Name</h2>
+        <h2><b>Fabian </b> Morales</h2>
       </div>
     </header>
 
@@ -77,9 +88,7 @@
         <div class="compose">
           <h2>Compose Tweet</h2>
         </div>
-        <div id="error-message">
-          
-        </div>
+        <div id="error-message"></div>
         <form id="new-tweet-form" action="/tweets/" method="POST">
           <label for="tweet-text"></label>
           <textarea
@@ -92,10 +101,8 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
-        <section id="tweets-container">
-          
-        </section>
       </section>
+      <section id="tweets-container"></section> <!--In this point is the building of every tweet-->
     </main>
   </body>
 </html>

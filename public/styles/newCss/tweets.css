@@ -1,12 +1,11 @@
-
 .tweet {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   border: 2px solid #050505;
   padding: 10px;
   border-radius: 15px;
   margin-bottom: 10px;
-  
+
 }
 
 article:hover {
@@ -15,45 +14,41 @@ article:hover {
 
 .tweet header {
   background-color: #fbfaf9;
-  display: flex;  
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-bottom: 2px solid black;
-
 }
 
-.tweet header .avatarName{
+.tweet header .avatarName {
   display: flex;
-  flex-direction: row ;
-  justify-content: space-between; 
-  
+  flex-direction: row;
+  justify-content: space-between;
 }
-.tweet header .avatarName .avatarNameTop{
+.tweet header .avatarName .avatarNameTop {
   display: flex;
   flex-direction: row;
 }
-.tweet header .avatar{
+.tweet header .avatar {
   width: 80px;
   display: flex;
   flex-grow: 1;
-  
-  
-}
-.tweet header .tweet-text{
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
+.tweet header .tweet-text {
+  flex-direction: column;
+  justify-content: flex-end;
+  inline-size: 100%;
+  overflow-wrap: break-word;
+}
 
 footer {
   display: flex;
   justify-content: space-between;
   align-content: center;
-
 }
 article footer .tweet-icons {
   display: flex;
-  
 }
 
 .tweet-icons i {
@@ -64,4 +59,76 @@ article footer .tweet-icons {
 
 .tweet-icons i:hover {
   color: #1808f7;
+}
+#tweets-container {
+  height: 9000px;
+  overflow-y: auto;
+}
+/*fixed performanse for small screens */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .tweet {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #050505;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+
+  article:hover {
+    box-shadow: 5px 5px;
+  }
+
+  .tweet header {
+    background-color: #fbfaf9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+  }
+
+  .tweet header .avatarName {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .tweet header .avatarName .avatarNameTop {
+    display: flex;
+    flex-direction: row;
+  }
+  .tweet header .avatar {
+    width: 80px;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .tweet header .tweet-text {
+    flex-direction: column;
+    justify-content: flex-end;
+    inline-size: 100%;
+    overflow-wrap: break-word;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  article footer .tweet-icons {
+    display: flex;
+  }
+
+  .tweet-icons i {
+    margin-left: 10px;
+    color: #999;
+    cursor: pointer;
+  }
+
+  .tweet-icons i:hover {
+    color: #1808f7;
+  }
+  #tweets-container {
+    height: 1900px;
+    overflow-y: auto;
+  }
 }

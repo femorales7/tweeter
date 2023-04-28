@@ -1,54 +1,52 @@
 main {
-  display:flex;
-  height: 720px;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color:  #ffffff;
+  display: flex;
+  height: 1250px;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
   font-style: normal;
   padding: 0 1.5em;
-  position: fixed;
+  /* position: fixed; */
   color: #070707;
   font-family: sans-serif;
-  
-
 }
-.new-tweet{
+
+.new-tweet {
   display: flex;
   flex-direction: column;
-  
 }
 
-main section form{
+main section form {
   display: flex;
   flex-flow: column wrap;
 }
-main section form textarea{
+main section form textarea {
   border: none;
   border-bottom: 2px solid black;
   background-color: transparent;
   align-items: end;
 }
 
-.botton{
-  display: flex;  
+.botton {
+  display: flex;
   font-family: Bungee, sans-serif;
   justify-content: space-between;
   align-content: center;
 }
 
-.botton button{
-  background-color: #4056A1;
-  color: #faf9f9;
+.botton button {
+  background-color: #4056a1;
+  color: white;
   font-family: Bungee, sans-serif;
 }
 .counter-invalid {
   color: red;
 }
 
-main #error-message{
+main #error-message {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  color: red
-
+  color: red;
 }

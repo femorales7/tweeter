@@ -6,8 +6,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: in-line;
 }
 
 /*
@@ -15,20 +17,120 @@ html {
  */
 
 body {
+  display: flex;
   font: Source Sans Pro;
-  color: #545149;
-  background-color: #f4f1ec;
+  color: white;
+  background-color: white;
   font-size: 24px;
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  height: 720px;
 }
-main{
+
+main {
+  display: flex;
+  flex-direction: column;
   width: 90%;
   align-content: center;
-  color: #dad8d3;
-  background-color: #f7f6f4;
-
+  color: white;
+  background-color: white;
+  margin-top: 170px;
 }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    display: flex;
+    font: Source Sans Pro;
+    color: white;
+    background-color: white;
+    font-size: 24px;
+    font-family: "Bungee", cursive;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    height: 720px;
+  }
+  body nav.navigationBar {
+    align-self: flex-start;
+  }
+  body header.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 500px 50px 10px 50px;
+    margin: 200px 0px 10px 0px;
+    background-color: #f9c008;
+    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    font-family: sans-serif;
+    order: 2;
+  }
+ 
+  body .navigationBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    background-color: #4056a1;
+    color: white;
+    font-family: Bungee, sans-serif;
+    padding: 0 1.5em;
+    top: 0;
+    position: fixed;
+    background-color: transparent;
+    order: 1;
+  }
+
+  nav span {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  body main.container {
+    display: flex;
+    height: 920px;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    background-color: white;
+    font-style: normal;
+    padding: 0 1.5em;
+    margin-top: 10px;
+    color: #070707;
+    font-family: sans-serif;
+    order: 3;
+  }
+  nav span.write {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    font: Source Sans Pro;
+    color: white;
+    background-color: white;
+    font-size: 24px;
+    font-family: "Bungee", cursive;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    height: 720px;
+  }
+}

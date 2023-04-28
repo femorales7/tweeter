@@ -1,14 +1,14 @@
-header.profile{
+header.profile {
   display: flex;
   flex-direction: column;
-  flex-flow: center wrap; 
-  justify-content: center;
+  justify-content: flex-star;
   align-items: center;
-  padding: 10px;
-  height: 720px;
-  width: 100%;
+  padding: 40px 50px 20px 50px;
+  margin-top: 200px;
+  margin-bottom: 50px;
   background-color: #f9c008;
   background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   font-family: sans-serif;
 }
+
